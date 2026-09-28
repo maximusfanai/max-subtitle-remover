@@ -19,7 +19,7 @@ if not FFMPEG_PATH:
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 TEMP_DIR = os.path.join(BASE_DIR, "temp")
-ASSETS_DIR = r"F:\subtitleremover\assets"
+ASSETS_DIR = os.path.join(BASE_DIR, "assets")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(TEMP_DIR, exist_ok=True)
